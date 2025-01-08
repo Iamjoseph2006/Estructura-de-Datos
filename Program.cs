@@ -2,11 +2,13 @@
 
 class Program
 {
+    // Método principal de la aplicación
     static void Main()
     {
-        while (true) // Bucle para mostrar el menú de manera continua
+        // Bucle infinito para mostrar el menú de manera continua
+        while (true)
         {
-            // Mostrar opciones del menú principal
+            // Mostrar las opciones del menú principal
             Console.WriteLine("\nSeleccione una opción:");
             Console.WriteLine("1. Productos");
             Console.WriteLine("2. Tipos de Datos");
@@ -16,41 +18,44 @@ class Program
             // Leer la opción del usuario en la variable 'option'
             string option = Console.ReadLine();
 
-            // Procesar la opción seleccionada
+            // Procesar la opción seleccionada con una estructura switch
             switch (option)
             {
                 case "1":
-                    // Llama al método que manejará productos
+                    // Si el usuario selecciona '1', muestra un mensaje relacionado con productos
                     Console.WriteLine("Has seleccionado la opción de Productos.");
                     break;
 
                 case "2":
-                    // Llama al método de tipos de datos
+                    // Si el usuario selecciona '2', muestra un mensaje relacionado con tipos de datos
                     Console.WriteLine("Has seleccionado la opción de Tipos de Datos.");
                     break;
 
                 case "3":
-                    // Mostrar submenú de ejercicios
+                    // Si el usuario selecciona '3', se llama al método MostrarEjercicios que muestra un submenú
                     MostrarEjercicios();
                     break;
 
                 case "4":
+                    // Si el usuario selecciona '4', sale del programa
                     Console.WriteLine("\nSaliendo del programa...");
-                    return; // Sale del bucle y termina el programa
+                    return; // Sale del bucle y termina la ejecución del programa
 
                 default:
+                    // Si el usuario ingresa una opción no válida, se muestra un mensaje de error
                     Console.WriteLine("\nOpción no válida. Intente nuevamente.");
                     break;
             }
         }
     }
 
-    // Método que muestra el submenú de ejercicios
+    // Método que muestra un submenú con opciones relacionadas con ejercicios
     static void MostrarEjercicios()
     {
+        // Bucle infinito para mostrar el submenú de ejercicios
         while (true)
         {
-            // Mostrar opciones de ejercicios
+            // Mostrar las opciones del submenú
             Console.WriteLine("\nSeleccione una opción:");
             Console.WriteLine("1. Mostrar Asignaturas");
             Console.WriteLine("2. Mostrar Asignatura Estudia");
@@ -59,13 +64,14 @@ class Program
             Console.WriteLine("5. Mostrar Números en Orden Inverso");
             Console.WriteLine("6. Salir");
 
-            // Leer la opción del usuario en la variable 'ejercicioOption'
+            // Leer la opción seleccionada por el usuario en la variable 'ejercicioOption'
             string ejercicioOption = Console.ReadLine();
 
-            // Procesar la opción seleccionada
+            // Procesar la opción seleccionada con una estructura switch
             switch (ejercicioOption)
             {
                 case "1":
+                    // Si el usuario selecciona '1', muestra el Ejercicio 1 y lo ejecuta
                     Console.WriteLine("Has Seleccionado el Ejercicio 1");
                     Console.WriteLine("Asignaturas");
                     Ejercicio1 ejercicio1 = new Ejercicio1();
@@ -73,13 +79,15 @@ class Program
                     break;
 
                 case "2":
+                    // Si el usuario selecciona '2', muestra el Ejercicio 2 y lo ejecuta
                     Console.WriteLine("Has Seleccionado el Ejercicio 2");
-                    Console.WriteLine("Que Asignatura Estudia");
+                    Console.WriteLine("Qué Asignatura Estudia");
                     Ejercicio2 ejercicio2 = new Ejercicio2();
                     ejercicio2.Run(); // Llamada a Ejercicio 2
                     break;
 
                 case "3":
+                    // Si el usuario selecciona '3', muestra el Ejercicio 3 y lo ejecuta
                     Console.WriteLine("Has Seleccionado el Ejercicio 3");
                     Console.WriteLine("Notas de Asignaturas");
                     Ejercicio3 ejercicio3 = new Ejercicio3();
@@ -87,6 +95,7 @@ class Program
                     break;
 
                 case "4":
+                    // Si el usuario selecciona '4', muestra el Ejercicio 4 y lo ejecuta
                     Console.WriteLine("Has Seleccionado el Ejercicio 4");
                     Console.WriteLine("Números Ganadores");
                     Ejercicio4 ejercicio4 = new Ejercicio4();
@@ -94,6 +103,7 @@ class Program
                     break;
 
                 case "5":
+                    // Si el usuario selecciona '5', muestra el Ejercicio 5 y lo ejecuta
                     Console.WriteLine("Has Seleccionado el Ejercicio 5");
                     Console.WriteLine("Números en Orden Inverso");
                     Ejercicio5 ejercicio5 = new Ejercicio5();
@@ -101,10 +111,11 @@ class Program
                     break;
 
                 case "6":
-                    // Volver al menú principal
+                    // Si el usuario selecciona '6', vuelve al menú principal
                     return;
 
                 default:
+                    // Si el usuario ingresa una opción no válida en el submenú, muestra un mensaje de error
                     Console.WriteLine("\nOpción no válida. Intente nuevamente.");
                     break;
             }
