@@ -13,7 +13,8 @@ class Program
             Console.WriteLine("1. Productos");
             Console.WriteLine("2. Tipos de Datos");
             Console.WriteLine("3. Ejercicios");
-            Console.WriteLine("4. Salir");
+            Console.WriteLine("4. Agenda de Turnos");
+            Console.WriteLine("5. Salir");
 
             // Leer la opción del usuario en la variable 'option'
             string option = Console.ReadLine();
@@ -37,13 +38,17 @@ class Program
                     break;
 
                 case "4":
-                    // Si el usuario selecciona '4', sale del programa
+                    // Llamar al método de gestionar agenda de turnos
+                    AgendaTurno agendaTurno = new AgendaTurno();
+                    agendaTurno.GestionarAgenda(); // Llamar al método de AgendaTurno
+                    break;
+
+                case "5":
                     Console.WriteLine("\nSaliendo del programa...");
-                    return; // Sale del bucle y termina la ejecución del programa
+                    return;
 
                 default:
-                    // Si el usuario ingresa una opción no válida, se muestra un mensaje de error
-                    Console.WriteLine("\nOpción no válida. Intente nuevamente.");
+                    Console.WriteLine("Opción no válida. Intente nuevamente.");
                     break;
             }
         }

@@ -12,3 +12,4 @@ c:\Users\DELL\Documentos\ESTRUCTURA DE DATOS\Estructura de Datos\obj\Debug\net9.
 c:\Users\DELL\Documentos\ESTRUCTURA DE DATOS\Estructura de Datos\obj\Debug\net9.0\Estructura de Datos.pdb
 c:\Users\DELL\Documentos\ESTRUCTURA DE DATOS\Estructura de Datos\obj\Debug\net9.0\Estructura de Datos.genruntimeconfig.cache
 c:\Users\DELL\Documentos\ESTRUCTURA DE DATOS\Estructura de Datos\obj\Debug\net9.0\ref\Estructura de Datos.dll
+c:\Users\DELL\Documentos\ESTRUCTURA DE DATOS\Estructura de Datos\obj\Debug\net9.0\Estructura de Datos.sourcelink.json
